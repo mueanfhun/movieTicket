@@ -12,7 +12,7 @@ class showmovie extends Component {
           <Row>
          
             <div className="card">
-           <img  className="card-img" src={(this.props.details)? this.props.details.data[0].image : ''} />
+            <a href="#/showdetailGhostland"><img  className="card-img" src={(this.props.details)? this.props.details.data[0].image : ''} /></a>
               <div className="card-body">
                 <h2 className="card-title text-center">{(this.props.details)? this.props.details.data[0].name : ''}</h2>
                
@@ -23,7 +23,7 @@ class showmovie extends Component {
             </div> 
   
             <div className="card">
-          <img className="card-img" src={(this.props.details)? this.props.details.data[1].image : ''} />
+            <a href="#/showdetailDeadpool"> <img className="card-img" src={(this.props.details)? this.props.details.data[1].image : ''} /></a>
               <div className="card-body">
                 <h2 className="card-title text-center">{(this.props.details)? this.props.details.data[1].name : ''}</h2>
               
@@ -34,7 +34,7 @@ class showmovie extends Component {
             </div>
 
             <div className="card">
-            <img className="card-img" src={(this.props.details)? this.props.details.data[2].image : ''} />
+            <a href="#/showdetailthaiban"> <img className="card-img" src={(this.props.details)? this.props.details.data[2].image : ''} /></a>
               <div className="card-body">
                 <h2 className="card-title text-center">{(this.props.details)? this.props.details.data[2].name : ''}</h2>
                   
@@ -45,7 +45,7 @@ class showmovie extends Component {
             </div>
 
             <div className="card">
-          <img className="card-img" src={(this.props.details)? this.props.details.data[3].image : ''} />
+            <a href="#/showdetailAvengers"> <img className="card-img" src={(this.props.details)? this.props.details.data[3].image : ''} /></a>
                     <div className="card-body">
                       <h2 className="card-title text-center">{(this.props.details)? this.props.details.data[3].name : ''}</h2>
                     
@@ -62,7 +62,7 @@ class showmovie extends Component {
         <div >
           <Row>
               <div className="card">
-              <img className="card-img" src={(this.props.details)? this.props.details.data[4].image : ''} />
+              <a href="#/showdetailJazz"> <img className="card-img" src={(this.props.details)? this.props.details.data[4].image : ''} /></a>
                 <div className="card-body">
                   <h2 className="card-title text-center">{(this.props.details)? this.props.details.data[4].name : ''}</h2>
                 
@@ -73,7 +73,7 @@ class showmovie extends Component {
               </div> 
  
               <div className="card">
-               <img className="card-img" src={(this.props.details)? this.props.details.data[5].image : ''} />
+              <a href="#/showdetailMidnight"> <img className="card-img" src={(this.props.details)? this.props.details.data[5].image : ''} /></a>
                 <div className="card-body">
                   <h2 className="card-title text-center">{(this.props.details)? this.props.details.data[5].name : ''}</h2>
                  
