@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import { AppAsideToggler, AppHeaderDropdown, AppNavbarBrand, AppSidebarToggler } from '@coreui/react';
 
-import logo from '../../assets/img/brand/logo.svg'
+import logo from '../../assets/img/brand/movie.jpg'
 import sygnet from '../../assets/img/brand/sygnet.svg'
 import avatar from '../../assets/img/avatars/6.jpg'
 
@@ -24,28 +24,17 @@ class DefaultHeader extends Component {
       <React.Fragment>
         <AppSidebarToggler className="d-lg-none" display="md" mobile />
         <AppNavbarBrand
-          full={{ src: logo, width: 89, height: 25, alt: 'CoreUI Logo' }}
-          minimized={{ src: sygnet, width: 30, height: 30, alt: 'CoreUI Logo' }}
+          full={{ src: logo, width: 100, height: 50 }}
+       
         />
-        <AppSidebarToggler className="d-md-down-none" display="lg" />
-        <Nav className="ml-auto" navbar>
-          <AppHeaderDropdown>
-            <DropdownToggle nav>
-              <img src={avatar} className="img-avatar" alt="admin@bootstrapmaster.com" />
-            </DropdownToggle>
-            <DropdownMenu right style={{ right: 'auto', height: '400px' }}>
-              AppHeaderDropdown
-            </DropdownMenu>
-          </AppHeaderDropdown>
-        </Nav>
-        <AppAsideToggler className="d-md-down-none" />
-        {/*<AppAsideToggler className="d-lg-none" mobile />*/}
+      
       </React.Fragment>
     );
   }
 }
 
 DefaultHeader.propTypes = propTypes;
-DefaultHeader.defaultProps = defaultProps;
+DefaultHeader.defaultProps = defaultProps; 
+
 
 export default DefaultHeader;
