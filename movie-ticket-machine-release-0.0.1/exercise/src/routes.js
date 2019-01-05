@@ -8,6 +8,8 @@ import showdetailthaiban from './views/component/showdetailthaiban';
 import showdetailAvengers from './views/component/showdetailAvengers';
 import showdetailJazz from './views/component/showdetailJazz';
 import showdetailMidnight from './views/component/showdetailMidnight';
+import showdetailBumblebee from './views/component/showdetailBumblebee';
+import showdetailFantastic from './views/component/showdetailFantastic';
 
 function Loading() {
   return <div>Loading...</div>;
@@ -28,6 +30,8 @@ const routes = [
   { path: '/showdetailAvengers', name: 'showavengers', component: showdetailAvengers},
   { path: '/showdetailJazz',name: 'showjazz', component: showdetailJazz},
   { path: '/showdetailMidnight',name: 'showmidnight', component: showdetailMidnight},
+  { path: '/showdetailBumblebee',name: 'showdetailBumblebee', component: showdetailBumblebee},
+  { path: '/showdetailFantastic',name: 'showdetailFantastic', component: showdetailFantastic},
 ];
 
 export default routes;

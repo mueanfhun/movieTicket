@@ -84,7 +84,7 @@ class showmovie extends Component {
               </div>
 
               <div className="card">
-            <img className="card-img" src={(this.props.details)? this.props.details.data[6].image : ''} />
+              <a href="#/showdetailBumblebee"> <img className="card-img" src={(this.props.details)? this.props.details.data[6].image : ''} /></a>
                   <div className="card-body">
                     <h2 className="card-title text-center">{(this.props.details)? this.props.details.data[6].name : ''}</h2>
                      
@@ -95,7 +95,7 @@ class showmovie extends Component {
               </div>
 
               <div className="card">
-              <img className="card-img" src={(this.props.details)? this.props.details.data[7].image : ''} />
+              <a href="#/showdetailFantastic"> <img className="card-img" src={(this.props.details)? this.props.details.data[7].image : ''} /></a>
                       <div className="card-body">
                         <h2 className="card-title text-center">{(this.props.details)? this.props.details.data[7].name : ''}</h2>
                        
