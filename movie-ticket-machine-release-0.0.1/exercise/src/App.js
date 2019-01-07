@@ -13,19 +13,31 @@ import 'simple-line-icons/css/simple-line-icons.css';
 // Import Main styles for this application
 import './scss/style.css'
 
-// Containers
+// Redux Dependancies
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk'
+import { composeWithDevTools } from 'redux-devtools-extension';
+
+import reducers from "./views/reducers";
+
+// layout
 import { DefaultLayout } from './containers';
+
 
 // import { renderRoutes } from 'react-router-config';
 
 class App extends Component {
   render() {
+    const store = createStore(reducers, composeWithDevTools(applyMiddleware(thunk)))
     return (
+      <Provider store={store} >
       <HashRouter>
         <Switch>
           <Route path="/" name="Home" component={DefaultLayout} />
         </Switch>
       </HashRouter>
+    </Provider>
     );
   }
 }
