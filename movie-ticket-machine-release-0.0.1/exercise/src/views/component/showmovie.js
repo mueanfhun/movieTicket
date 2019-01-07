@@ -114,7 +114,7 @@ class showmovie extends Component {
             <Row>
 
                 <div className="card">
-                 <img className="card-img" src={(this.props.details)? this.props.details.data[8].image : ''} />
+                <a href="#/showdetailSolo"> <img className="card-img" src={(this.props.details)? this.props.details.data[8].image : ''} /></a>
                   <div className="card-body">
                     <h2 className="card-title text-center">{(this.props.details)? this.props.details.data[8].name : ''}</h2>
                   
@@ -125,7 +125,7 @@ class showmovie extends Component {
                 </div> 
           
                 <div className="card">
-                <img className="card-img" src={(this.props.details)? this.props.details.data[9].image : ''} />
+                <a href="#/showdetailMile"> <img className="card-img" src={(this.props.details)? this.props.details.data[9].image : ''} /></a>
                   <div className="card-body">
                     <h2 className="card-title text-center">{(this.props.details)? this.props.details.data[9].name : ''}</h2>
                    
@@ -136,7 +136,7 @@ class showmovie extends Component {
                 </div>
 
                 <div className="card">
-                <img className="card-img" src={(this.props.details)? this.props.details.data[10].image : ''} />
+                <a href="#/showdetailPredator"> <img className="card-img" src={(this.props.details)? this.props.details.data[10].image : ''} /></a>
                     <div className="card-body">
                       <h2 className="card-title text-center">{(this.props.details)? this.props.details.data[10].name : ''}</h2>
                        
@@ -147,7 +147,7 @@ class showmovie extends Component {
                 </div>
 
                 <div className="card">
-                <img className="card-img" src={(this.props.details)? this.props.details.data[11].image : ''} />
+                <a href="#/showdetailFiftyShades"> <img className="card-img" src={(this.props.details)? this.props.details.data[11].image : ''} /></a>
                         <div className="card-body">
                           <h2 className="card-title text-center">{(this.props.details)? this.props.details.data[11].name : ''}</h2>
                         
