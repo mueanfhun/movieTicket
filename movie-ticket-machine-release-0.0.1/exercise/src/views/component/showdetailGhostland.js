@@ -22,6 +22,7 @@ class showdetailGhostland extends Component {
         <div class="card-body">
         <h2 className="card-title text-center">{(this.props.datamovie)? this.props.datamovie.data[0].name : ''}</h2>
           <p className="card-text text-center">{(this.props.datamovie)? this.props.datamovie.data[0].shot_description : ''}</p>
+         
         </div>
         </div>
 
